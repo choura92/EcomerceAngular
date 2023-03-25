@@ -1,0 +1,25 @@
+<h1>listes des categories</h1>
+<div class="container">
+    <button class="btn btn-success" type="button">ajouter</button>
+
+    <table class="table table-striped">
+        <thead>
+<tr>
+<th>nom categorie</th>
+<th>image categorie</th>
+<th>modifier</th>
+<th>supprimer</th>
+</tr>
+        </thead>
+   <tbody>
+<tr *ngFor="let c of categorie">
+    <td>{{c.nomcategorie}}</td>
+   <td><img src={{c.imagecategorie}} width="60" height="60"/></td>
+   <td><button class="btn btn-primary" type="button">modifer</button>
+   </td>
+   <td><button class="btn btn-danger" type="button">suprimer</button>
+   </td>
+</tr>
+
+   </tbody>
+    </table>

@@ -1,0 +1,36 @@
+<div class="container">
+    <form (ngSubmit)="modifarticle()">
+      <div class="mb-3">
+        <label for="designation" class="form-label">designation</label>
+        <input type="text" class="form-control" id="designation" name="designation" placeholder="designation" [(ngModel)]="articles.designation">
+      </div>
+      <div class="mb-3">
+        <label for="imageart" class="form-label">imageart</label>
+        <input type="text" class="form-control" id="imageart" name="imageart" placeholder="imageart" [(ngModel)]="articles.imageart">
+      </div>
+      <div class="mb-3">
+        <label for="marque" class="form-label">marque</label>
+        <input type="String" class="form-control" id="marque" name="marque" placeholder="marque" [(ngModel)]="articles.marque">
+      </div>
+      <div class="mb-3">
+        <label for="prix" class="form-label">prix</label>
+        <input type="number" class="form-control" id="prix" name="prix" placeholder="prix" [(ngModel)]="articles.prix">
+      </div>
+      <div class="mb-3">
+        <label for="reference" class="form-label">reference</label>
+        <input type="String" class="form-control" id="reference" name="reference" placeholder="reference" [(ngModel)]="articles.reference">
+      </div>
+      <div class="mb-3">
+        <label for="qtestock" class="form-label">qtestock</label>
+        <input type="number" class="form-control" id="qtestock" name="qtestock" placeholder="qtestock" [(ngModel)]="articles.qtestock">
+      </div>
+      
+     
+      
+     <div class="form-group">
+      <div class="col-sm-4">
+      <button type="submit" class="btn btn-success" >Enregistrer</button>
+      </div>
+      </div>
+    
+    </form>
